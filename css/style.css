@@ -1,0 +1,252 @@
+@font-face {
+font-family: "CocomatPro";
+src: url("../fonts/Cocomat.Pro/CocomatPro-Regular.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+}
+
+@font-face {
+font-family: "CocomatPro"; 
+src: url("../fonts/Cocomat.Pro/CocomatPro-Bold.ttf") format("truetype");
+font-style: normal; 
+font-weight: bold; 
+}
+
+html, body {
+	height: 100%;
+	font-family: CocomatPro, sans-serif;
+	font-size: 18px;
+	color: #2C2D2D;
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	body {
+		margin: 0;
+		font-size: 0.9em;
+	}
+}
+
+.container {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	max-width: 950px;
+	margin: auto;
+	box-shadow: 4px 4px 14px grey;
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.container {
+		max-width: 850px;
+	}
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	.container {
+		max-width: 650px;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	.container {
+		max-width: 600px;
+		font-size: 0.8em;
+	}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.container {
+		max-width: 100%;
+		box-shadow: none;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: #ffd772;
+}
+
+a:visited {
+	color: grey;
+}
+
+.header {
+	display: flex;
+	background: #ffd772;
+
+}
+
+.header img {
+	width: 25%;
+	border-radius: 50%;
+	margin: 10px;
+	transform: rotate(14deg);
+}
+
+.title {
+	font-size: 0.8em;
+	letter-spacing: 3px;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.header img {
+		width: 35%;
+	}
+
+	.title {
+		letter-spacing: 2px;
+	}
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+	body {
+		font-size: 0.7em;
+	}
+
+	.header img {
+		width: 35%;
+	}
+
+	.title {
+		letter-spacing: normal;
+	}
+}
+
+.content {
+	flex: 1 1 auto;
+	min-width: 90%;
+	margin: auto;
+}
+
+.content > div {
+	display: flex;
+	border-bottom: #2C2D2D 2px solid;
+}
+
+.content > div:last-child {
+	border-bottom: none;
+}
+
+.content h3 {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	width: 30%;
+	padding-left: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.content {
+		min-width: 95%;
+		margin: 0 8px;
+	}
+	.content > div {
+		display: block;
+		border-width: 1px;
+	}
+	.content h3 {
+		letter-spacing: 1px;
+		width: 100%;
+		padding: 3px 3px;
+		justify-content: center;
+	}
+}
+
+.about p {
+	width: 70%;
+	line-height: 2;
+	font-weight: lighter;
+}
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.about p {
+		font-size: 1.2em;
+		width: 100%;
+	}
+}
+
+.content ul {
+	padding: 15px;
+}
+
+.content li {
+	margin-bottom: 15px;
+}
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.content ul {
+		font-size: 1.2em;
+	}
+
+	.content li:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.footer {
+	background-color: #37C871;
+}
+
+.social {
+	padding: 20px 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	.social {
+		padding: 15px 10px;
+	}
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+	.social {
+		padding: 10px 10px;
+	}
+}
+
+.social a {
+	margin-left: 30px;
+	font-size: 30px;
+	color: white;
+}
+
+.social a:last-child {
+	margin-right: 30px;
+}
+
+/* Iphone 5 */
+@media (max-width: 320px) {
+	.social a {
+		margin-left: 20px;
+		font-size: 25px;
+	}
+
+	.social a:last-child {
+		margin-right: 20px;
+	}
+}
+
+.social a:hover {
+	transform: scale(1.2);
+}
+
